@@ -1,0 +1,13 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: hello_world
+  namespace: etherpad
+  labels:
+    app.kubernetes.io/name: etherpad-app
+spec:
+  tower_auth_secret: toweraccess
+  job_template_name: hello_world
+  extra_vars:
+    app_name: myapp
