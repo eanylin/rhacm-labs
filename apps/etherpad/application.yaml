@@ -32,6 +32,7 @@ metadata:
   namespace: etherpad
   labels:
     app: etherpad-app
+    app.kubernetes.io/name: etherpad-app
   annotations:
     apps.open-cluster-management.io/github-path: resources/etherpad
 spec:
